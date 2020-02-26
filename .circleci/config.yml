@@ -27,7 +27,7 @@ jobs:
           name: Install and configure dependencies
           command: |
             npm install -g --silent gh-pages@2.0.1
-            npm install @11ty/eleventy -g
+            npm install hexo-cli -g
       - run: 
           name: Build Eleventy Site
           command: |
@@ -35,7 +35,7 @@ jobs:
             hexo generate # generate static files
       - add_ssh_keys:
           fingerprints:
-            - "44:96:a5:95:1e:86:90:cf:e6:ef:67:e7:33:23:3b:0f"
+            - "34:65:f3:a6:58:55:cc:fa:29:96:44:73:e2:6a:f9:64"
       - run:
           name: Deploy docs to gh-pages branch
-          command: gh-pages --dotfiles --message "[skip ci] Updates" --dist dist
+          command: gh-pages --dotfiles --message "[skip ci] Updates" --dist public
