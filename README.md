@@ -1,4 +1,4 @@
-# Hexo Bulma Test Drive on Travis
+# Hexo Bulma Test Drive on CircleCI
 
 An example of Hexo site using Bulma
 for personal learning purpose.
