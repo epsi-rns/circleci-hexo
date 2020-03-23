@@ -17,10 +17,10 @@ Please refer to original tutorial:
 
 Since this use github pages, we should set the `root` as below example
 
-This travis example has **_config.yml** as below
+This circleci example has **_config.yml** as below
 
 ```
-root          : /travis-hexo/
+root          : /circleci-hexo/
 ```
 
 And has **_config_local.yml** as below
